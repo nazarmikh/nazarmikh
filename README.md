@@ -1,60 +1,56 @@
 # Nazar Mikhin
 
-Creative Technologies and Artificial Intelligence student at Howest, based in Kortrijk, Belgium.
+Creative Technologies & Artificial Intelligence student at Howest University of Applied Sciences, based in Kortrijk, Belgium.
 
-I build backend systems and applied AI projects using C#, ASP.NET Core, Python, databases, Docker and machine-learning tools. My work focuses on REST APIs, integration testing, data-driven applications, computer vision and model integration.
+I work on applied AI and software engineering projects, with experience developing machine-learning systems, computer vision pipelines, APIs, data integrations and production-oriented backend applications.
 
 ## Projects
 
 ### [Cabrynt](https://github.com/nazarmikh/Cabrynt)
 
-A backend-focused ride and fleet management platform built with ASP.NET Core, Entity Framework Core, PostgreSQL, MongoDB, Docker and GitHub Actions.
+A ride and fleet management platform combining ASP.NET Core backend engineering with machine-learning-based trip-duration prediction.
 
-The system includes cookie-based authentication, role-based authorization, passenger and vehicle management, ride and payment workflows, telemetry storage, validation, GraphQL admin reads and automated integration tests.
+The ML pipeline uses historical taxi trajectories, temporal and weather features, and OSRM route estimates. Models were evaluated using chronological validation, with the selected OSRM-residual gradient-boosting approach reducing MAE from 5.488 to 3.383 minutes on a locked 4,999-trip cohort.
 
-### Traffic Flow Prediction Platform
+The selected model was exported to ONNX and integrated into the ASP.NET Core ride-quote API with guarded inference and routing/weather fallbacks.
 
-A team project built with .NET 8, Azure Functions, Python and ONNX Runtime.
-
-I developed serverless backend endpoints, integrated traffic and weather data from external APIs, and connected Python-trained prediction models to a C# backend through ONNX.
+The wider platform includes PostgreSQL, Docker, authentication and authorization, automated testing, CI/CD and administrative functionality.
 
 ### Drone Human Detection and Posture Classification
 
-A computer vision project for detecting people and classifying posture in low-resolution drone images.
+A computer vision project for detecting people and classifying posture in challenging low-resolution drone imagery.
 
-The system uses a two-stage pipeline: an object detection model locates people, and a classification model labels each detected person as standing, sitting or lying. The project includes dataset preparation, training, model comparison and inference pipeline development.
+The system uses a two-stage pipeline: object detection followed by classification of detected people as standing, sitting or lying.
+
+The project includes dataset preparation, preprocessing, augmentation, model training, comparison, failure analysis and investigation of domain differences between training data and real drone footage.
 
 ## Technologies
 
-**Backend and software development**
-
-- C# / .NET
-- ASP.NET Core
-- REST APIs
-- Entity Framework Core
-- PostgreSQL / SQL
-- MongoDB
-- Docker / Docker Compose
-- Git / GitHub Actions
-- xUnit / integration testing
-- Azure Functions
-
-**Artificial intelligence**
+**AI and data**
 
 - Python
-- Machine learning and deep learning
+- Machine learning
+- Deep learning
 - Computer vision
-- Object detection and image classification
-- Transfer learning
-- Model training and evaluation
-- Reinforcement learning
+- ONNX
+- Data processing
+
+**Software engineering**
+
+- C# / .NET / ASP.NET Core
+- REST APIs
+- PostgreSQL / SQL
+- Docker
+- Azure Functions
+- Git / GitHub Actions / CI/CD
+- Automated and integration testing
 
 ## Current Focus
 
-I am improving Cabrynt as a portfolio backend project, with focus on authentication, automated tests, documentation, deployment readiness and production-style architecture.
+I am continuing to develop Cabrynt as a production-oriented AI and software engineering project, improving its machine-learning pipeline, inference integration, reliability and overall product quality.
 
-I am also completing the drone human detection and posture classification pipeline.
+My current coursework includes MLOps, Robotics and Generative AI.
 
 ## Opportunities
 
-I am open to student jobs, internships and junior opportunities in backend development, software engineering and applied AI.
+I am looking for a full-time academic AI internship from 15 February to 4 June 2027 and am also interested in junior AI engineering or software engineering opportunities after graduation.
